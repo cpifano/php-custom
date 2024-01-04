@@ -1,0 +1,11 @@
+version: '3.5'
+services:
+  php-custom:
+    container_name: php-custom
+    image: cpifano/php-custom:1.0.0
+    restart: unless-stopped
+    volumes:
+        - ./php/conf:/usr/local/etc/php/
+        - ./php/src:/var/www/html
+    ports:
+      - 80:80
