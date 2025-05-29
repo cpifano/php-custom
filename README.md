@@ -20,11 +20,10 @@
 Example `docker-compose.yml` content:
 
 ```yaml
-version: '3.5'
 services:
   php-custom:
     container_name: php-custom
-    image: cpifano/php-custom:1.0.0
+    image: cpifano/php-custom:1.0.1
     restart: unless-stopped
     volumes:
         - ./php/conf:/usr/local/etc/php/
